@@ -1,19 +1,11 @@
 
-# Template LaTeX Laporan Proyek Akhir D4 Teknik Elektronika UNY
+# Template LaTeX Laporan Praktik Industri Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY
 
-Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Proyek Akhir mahasiswa D4 Teknik Elektronika UNY. Semua mahasiswa D4 Teknik Elektronika wajib menggunakan template LaTeX ini karena dengan menggunakan template ini penulisan laporan akan menjadi lebih cepat dengan format yang seragam sehingga mahasiswa dapat fokus pada konten dan tidak terkendala dengan format laporan yang kadang kala menjadi kendala tersendiri. Selain itu penyimpanan file laporan menjadi lebih mudah karena dapat di simpan di Github sehingga mudah untuk diakses.
+Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik Industri Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY. Semua Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY wajib menggunakan template LaTeX ini karena dengan menggunakan template ini penulisan laporan akan menjadi lebih cepat dengan format yang seragam sehingga mahasiswa dapat fokus pada konten dan tidak terkendala dengan format laporan yang kadang kala menjadi kendala tersendiri. Selain itu penyimpanan file laporan menjadi lebih mudah karena dapat di simpan di Github sehingga mudah untuk diakses.
 
 ## Catatan Perubahan
 
-- 16 Januari 2023: Pembuatan template dari Laporan Proyek Akhir
-- 28 Februari 2023: Mengubah sub-bab dari Bab I Pendahuluan, Mengubah susunan daftar isi, Fix surat Pernyataan untuk judul yang panjang, Fix Halaman Pengesahan tidak 2 halaman, Menambahkan Halaman Persembahan
-- 15 Juni 2023: Perbaikan format Halaman Pengesahan, Perbaikan contoh tabel, Penambahan hyperlink untuk gambar, tabel, dan persamaan pada bacaan berdasarkan label
-- 22 Juni 2023: Perbaikan nama file untuk memudahkan idefitikasi
-- 05 November 2023: Pemberian titik pada chapater di daftar isi, perbaikan hirarki penomoran
-- 06 November 2023: Perbaikan susunan abstrak (3 paragraf), Perbaikan Abstrak 1 spasi dan Konten 2 spasi
-- 07 November 2023: Perbaikan format pada beberapa bagian, penggantian format daftar pustaka dari IEEE -> APA 7th, Menambahkan contoh penulisan code beserta penomorannya, menambahkan contoh penulisan persamaan
-- 08 November 2023: Pengisian contoh isi Lampiran, Perbaikan contoh gambar dan tabel dan daftar singkatan
-- 12 November 2023: Penambahan contoh sumber daftar pustaka (artikel, prosiding, buku)
+- 16 November 2023: Pembuatan template dari Laporan Praktik Industri
 
 ## Penjelasan Isi File
 
@@ -22,30 +14,22 @@ Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip 
         .
         ├──a0-identitas.tex            # file pertama yang harus diedit berisi identitas dari tugas akhir seperti judul, nama mahasiswa, dll
         ├──a1-database.hyphenate.tex   # berisi daftar kata yang perlu dipenggal
-        ├──a2-abstrak.tex              # abstrak dalam bahasa indonesia
-        ├──a3-abstract.tex             # abstrak dalam bahasa inggris
-        ├──a4-persembahan.tex          # halaman persembahan, edit sesuai kebutuhan
-        ├──a5-katapengantar.tex        # kata pengantar, edit sesuai kebutuhan
-        ├──a6-daftarsingkatan.tex      # daftar singkatan dalam bentuk tabel, edit sesuai dengan penggunaan singkatan yang ada pada laporan
-        ├──a7-pustaka.bib              # daftar referensi dalam format bib, untuk menggenerate bagian ini gunakan mendeley / zotero
-        ├──a8-lampiran.tex             # daftar lampiran, edit sesuai dengan kebutuhan
+        ├──a2-katapengantar.tex        # kata pengantar, edit sesuai kebutuhan
+        ├──a3-lampiran.tex             # daftar lampiran, edit sesuai dengan kebutuhan
         ├──b1-bab1.tex                 # bab 1
         ├──b2-bab2.tex                 # bab 2
         ├──b3-bab3.tex                 # bab 3
         ├──b4-bab4.tex                 # bab 4
-        ├──b5-bab5.tex                 # bab 5
         ├──laporan.pdf                 # file laporan dalam format pdf
         ├──laporan.tex                 # file utama, jangan edit file ini 
         ├──README.md                   # file yang sedang anda baca
+        ├──pustaka.bib                 # daftar referensi dalam format bib, untuk menggenerate bagian ini gunakan mendeley / zotero
         ├──untouch                     # folder berisi file yang tidak boleh diedit 
                 xx-daftar.tex               
                 xx-daftarpustaka.tex        
-                xx-pengesahan.tex           
-                xx-pernyataan.tex           
-                xx-persetujuan.tex          
+                xx-pengesahan.tex                
                 xx-preambles.tex            
                 xx-sampul.tex               
-                xx-sampuldalam.tex          
         ├──gambar                      # folder berisi gambar, copy gambar yang dimasukkan pada laporan kesini dalam format jpg/png
                gambar-kucing.jpg
                logo-uny.png
@@ -68,6 +52,9 @@ file yang diawali dengan nama xx- terlarang untuk diedit selain itu silahkan edi
 
 1. Tutorial Latex 3 - Penambahan Gambar dan Tabel
 [![Tutorial Latex 3 - Penambahan Gambar dan Tabel](https://i.ytimg.com/vi/oxY1mbZgv94/hqdefault.jpg)](https://www.youtube.com/watch?v=oxY1mbZgv94)
+
+1. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
+[![Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi](https://i.ytimg.com/vi/goq-IS4WJW4/hqdefault.jpg)](https://www.youtube.com/watch?v=goq-IS4WJW4)
 
 ## Petunjuk Penggunaan
 1. Unduh dan Install MikTeX (https://miktex.org/download) sebagai distribusi dari LaTeX (pilih sesuai sistem operasi yang digunakan), catatan bagi pengguna Windows **Wajib Memilih for All User** saat proses instalasi serta pilih opsi _Always_ pada Installed on-the-fly
