@@ -6,6 +6,7 @@ Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik In
 ## Catatan Perubahan
 
 - 16 November 2023: Pembuatan template dari Laporan Praktik Industri
+- 07 November 2024: Perbaikan preamble agar lebih rapi dan penambahan tutorial penulisan dokumen dengan LaTeX
 
 ## Penjelasan Isi File
 
@@ -20,8 +21,8 @@ Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip 
         ├──b2-bab2.tex                 # bab 2
         ├──b3-bab3.tex                 # bab 3
         ├──b4-bab4.tex                 # bab 4
-        ├──laporan.pdf                 # file laporan dalam format pdf
-        ├──laporan.tex                 # file utama, jangan edit file ini 
+        ├──laporan-pi.pdf              # file laporan dalam format pdf
+        ├──laporan-pi.tex              # file utama, jangan edit file ini 
         ├──README.md                   # file yang sedang anda baca
         ├──pustaka.bib                 # daftar referensi dalam format bib, untuk menggenerate bagian ini gunakan mendeley / zotero
         ├──untouch                     # folder berisi file yang tidak boleh diedit 
@@ -47,13 +48,13 @@ file yang diawali dengan nama xx- terlarang untuk diedit selain itu silahkan edi
 1. Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY
 [![Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY](https://i.ytimg.com/vi/lnPTVrOGB90/hqdefault.jpg)](https://www.youtube.com/watch?v=lnPTVrOGB90)
 
-1. Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX
+2. Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX
 [![Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX](https://i.ytimg.com/vi/4Qk_2pknhsM/hqdefault.jpg)](https://www.youtube.com/watch?v=4Qk_2pknhsM)
 
-1. Tutorial Latex 3 - Penambahan Gambar dan Tabel
+3. Tutorial Latex 3 - Penambahan Gambar dan Tabel
 [![Tutorial Latex 3 - Penambahan Gambar dan Tabel](https://i.ytimg.com/vi/oxY1mbZgv94/hqdefault.jpg)](https://www.youtube.com/watch?v=oxY1mbZgv94)
 
-1. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
+4. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
 [![Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi](https://i.ytimg.com/vi/goq-IS4WJW4/hqdefault.jpg)](https://www.youtube.com/watch?v=goq-IS4WJW4)
 
 ## Petunjuk Penggunaan
@@ -78,4 +79,3 @@ Apabila ada pertanyaan dan konsultasi terkait template ini bisa tanyakan lewat e
 ## Pengembang
 
 - [@2black0](https://www.github.com/2black0)
-

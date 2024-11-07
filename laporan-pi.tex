@@ -12,19 +12,23 @@
 \begin{document}
 
 \include{untouch/xx-sampul}
+
 \pagenumbering{roman}
 
-\include{untouch/xx-pengesahan}
-\include{a2-katapengantar}
-\include{untouch/xx-daftar}
+\begin{spacing}{1.2}
+    \include{untouch/xx-pengesahan}
+    \include{a2-katapengantar}
+    \include{untouch/xx-daftar}
+\end{spacing}
+
 \pagenumbering{arabic}
 
-\begin{doublespace}
-\include{b1-bab1}
-\include{b2-bab2}
-\include{b3-bab3}
-\include{b4-bab4}
-\end{doublespace}
+\begin{spacing}{1.5}
+    \include{b1-bab1}
+    \include{b2-bab2}
+    \include{b3-bab3}
+    \include{b4-bab4}
+\end{spacing}
 
 \input{untouch/xx-daftarpustaka}
 \input{a3-lampiran}
