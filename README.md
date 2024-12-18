@@ -7,6 +7,7 @@ Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik In
 
 - 16 November 2023: Pembuatan template dari Laporan Praktik Industri
 - 07 November 2024: Perbaikan preamble agar lebih rapi dan penambahan tutorial penulisan dokumen dengan LaTeX
+- 18 Desember 2024: Perbaikan outline dan deskripsi panduan yang sesuai dengan konten dari laporan. Penambahan contoh penggunaan Tikz untuk gambar / grafik.
 
 ## Penjelasan Isi File
 
