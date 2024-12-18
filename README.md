@@ -22,6 +22,7 @@ Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip 
         ├──b2-bab2.tex                 # bab 2
         ├──b3-bab3.tex                 # bab 3
         ├──b4-bab4.tex                 # bab 4
+        ├──b5-bab5.tex                 # bab 5 HANYA TUTORIAL
         ├──laporan-pi.pdf              # file laporan dalam format pdf
         ├──laporan-pi.tex              # file utama, jangan edit file ini 
         ├──README.md                   # file yang sedang anda baca
