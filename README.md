@@ -3,12 +3,6 @@
 
 Repo ini berisi template LaTeX yang digunakan dalam penulisan Laporan Praktik Industri Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY. Semua Mahasiswa Sarjana Terapan Teknik Elektronika FV UNY wajib menggunakan template LaTeX ini karena dengan menggunakan template ini penulisan laporan akan menjadi lebih cepat dengan format yang seragam sehingga mahasiswa dapat fokus pada konten dan tidak terkendala dengan format laporan yang kadang kala menjadi kendala tersendiri. Selain itu penyimpanan file laporan menjadi lebih mudah karena dapat di simpan di Github sehingga mudah untuk diakses.
 
-## Catatan Perubahan
-
-- 16 November 2023: Pembuatan template dari Laporan Praktik Industri
-- 07 November 2024: Perbaikan preamble agar lebih rapi dan penambahan tutorial penulisan dokumen dengan LaTeX
-- 18 Desember 2024: Perbaikan outline dan deskripsi panduan yang sesuai dengan konten dari laporan. Penambahan contoh penggunaan Tikz untuk gambar / grafik
-
 ## Penjelasan Isi File
 
 Clone repo ini dengan menggunakan git clone atau unduh dengan klik Download Zip yang ada di pojok kanan atas dari repo ini. Terdapat beberapa file dalam repo ini, dan berikut adalah penjelasan dari masing-masing file:
@@ -50,14 +44,21 @@ file yang diawali dengan nama xx- terlarang untuk diedit selain itu silahkan edi
 1. Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY
 [![Tutorial LaTeX 1 - Penggunaan Template untuk Penulisan Laporan Tugas Akhir D4 Teknik Elektronika UNY](https://i.ytimg.com/vi/lnPTVrOGB90/hqdefault.jpg)](https://www.youtube.com/watch?v=lnPTVrOGB90)
 
-2. Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX
+1. Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX
 [![Tutorial LaTeX 2 - Penulisan Isi pada Template LaTeX](https://i.ytimg.com/vi/4Qk_2pknhsM/hqdefault.jpg)](https://www.youtube.com/watch?v=4Qk_2pknhsM)
 
-3. Tutorial Latex 3 - Penambahan Gambar dan Tabel
+1. Tutorial Latex 3 - Penambahan Gambar dan Tabel
 [![Tutorial Latex 3 - Penambahan Gambar dan Tabel](https://i.ytimg.com/vi/oxY1mbZgv94/hqdefault.jpg)](https://www.youtube.com/watch?v=oxY1mbZgv94)
 
-4. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
+1. Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi
 [![Tutorial LaTeX 4 - Pembuatan Daftar Pustaka dan Sitasi](https://i.ytimg.com/vi/goq-IS4WJW4/hqdefault.jpg)](https://www.youtube.com/watch?v=goq-IS4WJW4)
+
+1. Tutorial LaTeX 5 - Penulisan Kode Program pada LaTeX
+[![Tutorial LaTeX 5 - Penulisan Kode Program pada LaTeX](https://i.ytimg.com/vi/JeSJ0mYfxA0/hqdefault.jpg)](https://www.youtube.com/watch?v=JeSJ0mYfxA0)
+
+6. Workshop Lengkap Penulisan Proposal dan Laporan dengan LaTeX
+[![Workshop Lengkap Penulisan Proposal dan Laporan dengan LaTeX](https://i.ytimg.com/vi/anMLRydjDOE/hqdefault.jpg)](https://www.youtube.com/watch?v=anMLRydjDOE)
+
 
 ## Petunjuk Penggunaan
 1. Unduh dan Install MikTeX (https://miktex.org/download) sebagai distribusi dari LaTeX (pilih sesuai sistem operasi yang digunakan), catatan bagi pengguna Windows **Wajib Memilih for All User** saat proses instalasi serta pilih opsi _Always_ pada Installed on-the-fly
@@ -67,6 +68,12 @@ file yang diawali dengan nama xx- terlarang untuk diedit selain itu silahkan edi
 5. Terdapat beberapa contoh dalam _laporan.tex_ yang dapat dibaca pada _laporan.pdf_ seperti memasukkan gambar, membuat tabel, menuliskan persamaan, menuliskan sumber kode, dan membuat referensi dan sitasi
 6. Pastikan komputer sudah terhubung dengan internet karena diperlukan beberapa paket yang diunduh secara otomatis, kemudian setelah semua selesai bisa klik tombol **build & view** maka dokumen LaTeX akan digenerate dan outputnya adalah _laporan.pdf_ yang berada di sisi kanan
 
+## Langkah Pengerjaan
+1. Edit file `a0-identitas.tex` dengan mengisi judul, nama mahasiswa, nim, dosen pembimbing, dan lain-lain sesuai kebutuhan
+2. Edit file `b1-bab1.tex` sampai `b4-bab4.tex` dengan mengisi konten laporan sesuai dengan bab yang diinginkan. Jangan lupa hapus atau exclude file `b5-bab5.tex` pada `proposal-pi.tex`
+3. Edit file `pustaka.bib` dengan mengisi daftar pustaka
+4. Edit file `a2-katapengantar.tex` dan `a3-lampiran.tex` sesuai kebutuhan
+
 ## Pembuatan isi file bib (bibliography)
 Pembuatan isi file bib (bibliography) dapat dilakukan dengan software Mendeley (https://www.mendeley.com/search/) atau Zotero (https://www.zotero.org/). Selain itu sangat direkomendasikan menggunakan JabRef (https://www.jabref.org/).
 
@@ -75,9 +82,11 @@ Pembuatan isi file bib (bibliography) dapat dilakukan dengan software Mendeley (
 
 ![TexStudio on Windows](gambar/screenshot-texstudio-windows.png "TexStudio on Windows")
 
-## Catatan
-Apabila ada pertanyaan dan konsultasi terkait template ini bisa tanyakan lewat email ke ardyseto@uny.ac.id
+## Lisensi
+Template ini dilisensikan di bawah MIT License.
 
-## Pengembang
+## Kontribusi
+Kontribusi sangat diterima. Silakan buat pull request atau buka issue untuk perbaikan atau penambahan fitur.
 
-- [@2black0](https://www.github.com/2black0)
+## Kontak
+Unutuk pertanyaan lebih lanjut, silahkan hubungi [@2black0](https://www.github.com/2black0) atau email ardyseto@uny.ac.id
