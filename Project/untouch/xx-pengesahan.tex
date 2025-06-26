@@ -2,6 +2,16 @@
 % Ini adalah halaman persetujuan
 %==================================================================
 
+% Definisikan perintah fleksibel untuk nama panjang
+\newcommand{\fleksibelnama}[1]{%
+    {\footnotesize\parbox{\linewidth}{\centering #1}}%
+}
+
+% Definisikan perintah untuk NIP dengan font yang konsisten
+\newcommand{\fleksibelnip}[1]{%
+    {\footnotesize NIP. #1}%
+}
+
 %% DILARANG EDIT BAGIAN INI
 \newpage
 \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
@@ -30,33 +40,34 @@
     Menyetujui/Mengesahkan:\\
 \end{center}
 
-\begin{minipage}{0.35\textwidth}
+\begin{minipage}{0.45\textwidth}
+    \centering
     Pembimbing Industri,\\[2cm]
-    \pembimbingindustri\\
-    NIP. \NIKpembimbingindustri
+    \fleksibelnama{\pembimbingindustri}\\
+    \fleksibelnip{\NIKpembimbingindustri}
 \end{minipage}
 \hfill
-\begin{minipage}{0.47\textwidth}
+\begin{minipage}{0.45\textwidth}
+    \centering
     Dosen Pembimbing,\\[2cm]
-    \pembimbing\\
-    %\resizebox{\textwidth}{!}{\pembimbing}\\
-    NIP. \NIPpembimbing
+    \fleksibelnama{\pembimbing}\\
+    \fleksibelnip{\NIPpembimbing}
 \end{minipage}%
 
-\begin{minipage}{0.35\textwidth}
-    \hfill\\[2em]
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \vspace{2em}
     Wakil Dekan Bidang Akademik, Kemahasiswaan, dan Alumni FV UNY,\\[2cm]
-    \wakildekan \\
-    %\resizebox{\textwidth}{!}{\wakildekan}\\
-    NIP. \NIPwakildekan
+    \fleksibelnama{\wakildekan}\\
+    \fleksibelnip{\NIPwakildekan}
 \end{minipage}
 \hfill
-\begin{minipage}{0.47\textwidth}
-    \hfill\\[2em]
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \vspace{2em}
     Koordinator Unit Kerjasama dan Kolaborasi Industri {\prodi} FV UNY,\\[2cm]
-    \koordinatorUKKI \\
-    %\resizebox{\textwidth}{!}{\koordinatorUKKI}\\
-    NIP. \NIPkoordinatorUKKI
+    \fleksibelnama{\koordinatorUKKI}\\
+    \fleksibelnip{\NIPkoordinatorUKKI}
 \end{minipage}%
 
 %% DILARANG EDIT BAGIAN INI

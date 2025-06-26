@@ -45,14 +45,14 @@ Hasilnya akan tampak seperti berikut:
 \section{Menuliskan Kode Program dengan Listing}
 Lingkungan \texttt{lstlisting} memungkinkan kita untuk menuliskan atau menyisipkan kode Python, C++, Arduino, Java atau lainnya dalam dokumen LaTeX dengan format yang rapi dan terstruktur. Pada bagian ini, kita akan melihat dua cara untuk menuliskan kode Python: secara langsung di dalam dokumen dan dengan mengambil dari file eksternal.
 
-\Cref{lst:python_direct} menunjukkan fungsi Python yang menghitung faktorial dari sebuah angka. Kode ini ditulis langsung di dalam dokumen LaTeX menggunakan lingkungan \texttt{lstlisting} dengan format diawali dengan \texttt{\textbackslash begin\{lstlisting\}[language=Python, caption=Contoh Kode Python Langsung, label=lst:python\_direct]} dan diakhiri dengan \texttt{\textbackslash end\{lstlisting\}}, dimana:
+\Cref{lst:python-direct} menunjukkan fungsi Python yang menghitung faktorial dari sebuah angka. Kode ini ditulis langsung di dalam dokumen LaTeX menggunakan lingkungan \texttt{lstlisting} dengan format diawali dengan \texttt{\textbackslash begin\{lstlisting\}[language=Python, caption=Contoh Kode Python Langsung, label=lst:python-direct]} dan diakhiri dengan \texttt{\textbackslash end\{lstlisting\}}, dimana:
 \begin{packed_item}
     \item \texttt{language=Python}: Mengatur pewarnaan sintaksis untuk Python.
     \item \texttt{caption}: Menambahkan keterangan di atas kode untuk menjelaskan isi kode.
     \item \texttt{label}: Menambahkan label untuk memudahkan referensi kode dalam dokumen.
 \end{packed_item}
 
-\begin{lstlisting}[language=Python, caption=Contoh Kode Python Langsung, label=lst:python_direct]
+\begin{lstlisting}[language=Python, caption=Contoh Kode Python Langsung, label=lst:python-direct]
     def factorial(n):
         if n == 0:
             return 1
@@ -60,7 +60,7 @@ Lingkungan \texttt{lstlisting} memungkinkan kita untuk menuliskan atau menyisipk
             return n * factorial(n-1)
 \end{lstlisting}
 
-Jika Anda memiliki file kode Python di folder tertentu (misalnya, di \texttt{kode/code\_sample.py}), Anda bisa menyisipkan kode tersebut langsung ke dalam dokumen LaTeX menggunakan perintah \texttt{\textbackslash lstinputlisting}. Berikut \cref{lst:python_file} dengan format penulisan \texttt{\textbackslash lstinputlisting[language=Python, caption=Contoh Kode Python dari File, label=lst:python\_file]\{kode/code\_sample.py\}}, dimana:
+Jika Anda memiliki file kode Python di folder tertentu (misalnya, di \texttt{kode/code\_sample.py}), Anda bisa menyisipkan kode tersebut langsung ke dalam dokumen LaTeX menggunakan perintah \texttt{\textbackslash lstinputlisting}. Berikut \cref{lst:python-file} dengan format penulisan \texttt{\textbackslash lstinputlisting[language=Python, caption=Contoh Kode Python dari File, label=lst:python-file]\{kode/code\_sample.py\}}, dimana:
 \begin{packed_item}
     \item \texttt{language=Python}: Mengatur pewarnaan sintaksis untuk Python.
     \item \texttt{caption}: Menambahkan keterangan untuk kode yang diambil dari file.
@@ -68,17 +68,17 @@ Jika Anda memiliki file kode Python di folder tertentu (misalnya, di \texttt{kod
     \item \texttt{\{kode/code\_sample.py\}}: Menentukan path atau lokasi file Python yang akan disisipkan. Pastikan file berada di dalam folder \texttt{kode} atau path yang sesuai.
 \end{packed_item}
 
-\lstinputlisting[language=Python, caption=Contoh Kode Python dari File, label=lst:python_file]{kode/code_sample.py}
+\lstinputlisting[language=Python, caption=Contoh Kode Python dari File, label=lst:python-file]{kode/code_sample.py}
 
 \section{Menambahkan Gambar}
 Untuk menambahkan gambar hal yang harus dilakukan adalah:
 \begin{packed_enum}
     \item Menyalin file gambar (dalam format jpg \/ png) ke dalam folder \textit{gambar}
     \item Mengganti nama file dari gambar agar mudah dikenali, jangan diberi nama gambar-1,-2, dst
-    \item Memasukkan seperti \cref{lst:kode_gambar}
+    \item Memasukkan seperti \cref{lst:kode-gambar}
 \end{packed_enum}
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menyisipkan Gambar dalam Dokumen, label=lst:kode_gambar]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menyisipkan Gambar dalam Dokumen, label=lst:kode-gambar]
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.2]{gambar-kucing.jpg}
@@ -101,7 +101,7 @@ Hasilnya adalah terlihat seperti pada \cref{fig:kucing}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.1]{gambar-kucing}
+    \includegraphics[scale=0.1]{gambar-kucing.jpg}
     \caption{Gambar Kucing Lucu dan Imut dengan scala 0.1}
     \label{fig:kucing}
 \end{figure}
@@ -110,7 +110,7 @@ Setiap gambar harus dimention atau disebutkan didalam bacaan seperti berikut ini
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{logo-uny}
+    \includegraphics[scale=0.4]{logo-uny.png}
     \caption{Logo UNY dengan scala 0.4}
     \label{fig:logoUNY}
 \end{figure}
@@ -119,7 +119,7 @@ Untuk menyisipkan beberapa gambar dalam satu kelompok dan satu caption utama, ki
 
 Kode berikut menunjukkan cara menyusun tiga gambar secara berdampingan dengan satu caption utama.
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menyisipkan Gambar dalam Dokumen dengan Subfigure, label=lst:kode_gambar_multi]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menyisipkan Gambar dalam Dokumen dengan Subfigure, label=lst:kode-gambar-multi]
     \begin{figure}
         \centering
         \begin{subfigure}[b]{0.3\textwidth}
@@ -156,9 +156,9 @@ Kode berikut menunjukkan cara menyusun tiga gambar secara berdampingan dengan sa
     
     \item \texttt{\textbackslash includegraphics[width=\textbackslash linewidth]\{gambar-nama\}}: Memasukkan setiap gambar dengan lebar yang sesuai dengan lebar yang telah ditentukan untuk \texttt{subfigure}. 
         \begin{packed_enum}
-            \item Gambar pertama menggunakan file \texttt{gambar-kucing}, dengan caption "Kucing Lucu 1".
-            \item Gambar kedua menggunakan file \texttt{logo-uny}, dengan caption "Logo UNY".
-            \item Gambar ketiga juga menggunakan file \texttt{gambar-kucing}, dengan caption "Kucing Lucu 2".
+            \item Gambar pertama menggunakan file \texttt{gambar-kucing.jpg}, dengan caption "Kucing Lucu 1".
+            \item Gambar kedua menggunakan file \texttt{logo-uny.png}, dengan caption "Logo UNY".
+            \item Gambar ketiga juga menggunakan file \texttt{gambar-kucing.jpg}, dengan caption "Kucing Lucu 2".
         \end{packed_enum}
     
     \item \texttt{\textbackslash hfill}: Menyisipkan ruang kosong antar gambar, agar setiap \texttt{subfigure} memiliki jarak yang merata.
@@ -170,28 +170,26 @@ Kode berikut menunjukkan cara menyusun tiga gambar secara berdampingan dengan sa
 
 Dengan menggunakan metode ini, Anda dapat menyisipkan beberapa gambar dalam satu bagian dengan satu caption utama seperti pada \cref{fig:kucingdanUNY}. Setiap gambar dapat memiliki caption terpisah dan nomor (misalnya, (a), (b), (c)), sehingga rujukan spesifik untuk masing-masing gambar dapat dibuat, seperti \texttt{\textbackslash cref\{fig:kucing-a\}} untuk merujuk ke \cref{fig:kucing-a}.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{minipage}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{gambar-kucing.jpg}
-        \caption{Kucing Lucu 1}
+        \subcaption{Kucing Lucu 1}
         \label{fig:kucing-a}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \end{minipage}\quad
+    \begin{minipage}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{logo-uny.png}
-        \caption{Logo UNY}
+        \subcaption{Logo UNY}
         \label{fig:logo-uny-b}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \end{minipage}\quad
+    \begin{minipage}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{gambar-kucing.jpg}
-        \caption{Kucing Lucu 2}
+        \subcaption{Kucing Lucu 2}
         \label{fig:kucing-c}
-    \end{subfigure}
+    \end{minipage}
     \caption{Beberapa gambar yang disusun menjadi 1 bagian dengan penomoran (a), (b), dan (c)}
     \label{fig:kucingdanUNY}
 \end{figure}
@@ -201,7 +199,7 @@ TikZ adalah sebuah paket LaTeX yang digunakan untuk membuat grafik vektor. Berik
 
 \subsection{Menggambar Garis dan Bentuk Dasar}
 Untuk menggambar garis dan bentuk dasar, kita bisa menggunakan perintah-perintah berikut:
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Garis dan Bentuk Dasar, label=lst:Menggambar Garis dan Bentuk Dasar]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Garis dan Bentuk Dasar, label=lst:menggambar-garis-bentuk-dasar]
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}
@@ -229,7 +227,7 @@ Pada Gambar \ref{fig:tikzExample} dapat dilihat contoh gambar sederhana.
 
 \subsection{Menggambar Grafik Fungsi}
 TikZ juga bisa digunakan untuk menggambar grafik fungsi matematika:
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Fungsi, label=lst:Menggambar Grafik Fungsi]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Fungsi, label=lst:menggambar-grafik-fungsi]
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}
@@ -253,7 +251,7 @@ TikZ juga bisa digunakan untuk menggambar grafik fungsi matematika:
             \end{axis}
         \end{tikzpicture}
         \caption{Grafik fungsi \( f(x) = x^2 \) dengan domain \( [-10, 10] \)}
-        \label{fig:grafik_kuadrat}
+        \label{fig:grafik-kuadrat}
     \end{figure}
 \end{lstlisting}
 
@@ -280,14 +278,14 @@ TikZ juga bisa digunakan untuk menggambar grafik fungsi matematika:
         \end{axis}
     \end{tikzpicture}
     \caption{Grafik fungsi \( f(x) = x^2 \) dengan domain \( [-10, 10] \)}
-    \label{fig:grafik_kuadrat}
+    \label{fig:grafik-kuadrat}
 \end{figure}
 
-Pada Gambar \ref{fig:grafik_kuadrat} ditunjukkan grafik fungsi kuadrat.
+Pada Gambar \ref{fig:grafik-kuadrat} ditunjukkan grafik fungsi kuadrat.
 
 \subsection{Menggambar Diagram Alir}
 TikZ juga mendukung pembuatan diagram alir (flowchart):
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Diagram Alir, label=lst:Menggambar Diagram Alir]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Diagram Alir, label=lst:menggambar-diagram-alir]
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}[node distance=2cm]
@@ -305,7 +303,7 @@ TikZ juga mendukung pembuatan diagram alir (flowchart):
             \draw [arrow] (process2a) -- (stop);
         \end{tikzpicture}
         \caption{Diagram alir sederhana dengan kondisi percabangan}
-        \label{fig:flowchart_sederhana}
+        \label{fig:flowchart-sederhana}
     \end{figure}
 \end{lstlisting}
 \begin{figure}[H]
@@ -325,13 +323,13 @@ TikZ juga mendukung pembuatan diagram alir (flowchart):
         \draw [arrow] (process2a) -- (stop);
     \end{tikzpicture}
     \caption{Diagram alir sederhana dengan kondisi percabangan}
-    \label{fig:flowchart_sederhana}
+    \label{fig:flowchart-sederhana}
 \end{figure}
-Pada Gambar \ref{fig:flowchart_sederhana} ditunjukkan contoh diagram alir sederhana dengan satu kondisi percabangan.
+Pada Gambar \ref{fig:flowchart-sederhana} ditunjukkan contoh diagram alir sederhana dengan satu kondisi percabangan.
 
 \subsection{Menggambar Grafik Batang}
 Untuk menggambar grafik batang, kita bisa menggunakan perintah berikut:
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Batang, label=lst:Menggambar Grafik Batang]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Batang, label=lst:menggambar-grafik-batang]
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}
@@ -350,7 +348,7 @@ Untuk menggambar grafik batang, kita bisa menggunakan perintah berikut:
             \end{axis}
         \end{tikzpicture}
         \caption{Grafik batang yang menunjukkan nilai untuk kategori A, B, C, dan D}
-        \label{fig:grafik_batang}
+        \label{fig:grafik-batang}
     \end{figure}
 \end{lstlisting}
 \begin{figure}[H]
@@ -371,20 +369,20 @@ Untuk menggambar grafik batang, kita bisa menggunakan perintah berikut:
         \end{axis}
     \end{tikzpicture}
     \caption{Grafik batang yang menunjukkan nilai untuk kategori A, B, C, dan D}
-    \label{fig:grafik_batang}
+    \label{fig:grafik-batang}
 \end{figure}
-Pada Gambar \ref{fig:grafik_batang} dapat dilihat distribusi nilai pada berbagai kategori.
+Pada Gambar \ref{fig:grafik-batang} dapat dilihat distribusi nilai pada berbagai kategori.
 
 \subsection{Menggambar Grafik Pie}
 TikZ juga mendukung pembuatan grafik pie:
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Pie, label=lst:Menggambar Grafik Pie]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menggambar Grafik Pie, label=lst:menggambar-grafik-pie]
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}
             \pie{30/A, 20/B, 50/C}
         \end{tikzpicture}
         \caption{Diagram lingkaran yang menunjukkan distribusi persentase A, B, dan C}
-        \label{fig:pie_chart}
+        \label{fig:pie-chart}
     \end{figure}
 \end{lstlisting}
 \begin{figure}[H]
@@ -393,16 +391,16 @@ TikZ juga mendukung pembuatan grafik pie:
         \pie{30/A, 20/B, 50/C}
     \end{tikzpicture}
     \caption{Diagram lingkaran yang menunjukkan distribusi persentase A, B, dan C}
-    \label{fig:pie_chart}
+    \label{fig:pie-chart}
 \end{figure}
-Pada Gambar \ref{fig:pie_chart} ditunjukkan pembagian persentase untuk kategori A, B, dan C.
+Pada Gambar \ref{fig:pie-chart} ditunjukkan pembagian persentase untuk kategori A, B, dan C.
 
 Dengan contoh-contoh di atas, Anda dapat mulai membuat berbagai jenis grafik menggunakan TikZ di \LaTeX. Untuk informasi lebih lanjut, Anda dapat merujuk ke dokumentasi resmi TikZ.
 
 \section{Membuat Tabel}
-Pada bagian ini akan dijelaskan bagaimana membuat tabel dalam sebuah dokumen \LaTeX. untuk membuat tabel memang agak sedikit sulit, sehingga saya menyarankan menggunakan tool berikut \url{https://www.tablesgenerator.com/} atau \url{https://www.latex-tables.com/} kemudian isikan tabel pada tool generator tersebut dan salin kodenya ke dalam dokumen \LaTeX. Berikut adalah contoh dari sebuah tabel yang telah dibuat. Jangan lupa setiap tabel harus dimention dan dijelaskan dibacaan seperti berikut ini \cref{tab:hresult}. Contoh pembuatan tabel terlihat kodenya pada \cref{lst:kode_tabel}.
+Pada bagian ini akan dijelaskan bagaimana membuat tabel dalam sebuah dokumen \LaTeX. untuk membuat tabel memang agak sedikit sulit, sehingga saya menyarankan menggunakan tool berikut \url{https://www.tablesgenerator.com/} atau \url{https://www.latex-tables.com/} kemudian isikan tabel pada tool generator tersebut dan salin kodenya ke dalam dokumen \LaTeX. Berikut adalah contoh dari sebuah tabel yang telah dibuat. Jangan lupa setiap tabel harus dimention dan dijelaskan dibacaan seperti berikut ini \cref{tab:hresult}. Contoh pembuatan tabel terlihat kodenya pada \cref{lst:kode-tabel}.
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen, label=lst:kode_tabel]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen, label=lst:kode-tabel]
     \begin{table}[h]
         \caption{Performance Using Hard Decision Detection}
         \label{tab:hresult}
@@ -441,7 +439,7 @@ Pada bagian ini akan dijelaskan bagaimana membuat tabel dalam sebuah dokumen \La
     \item Jarak tambahan antara baris terakhir dan \texttt{\textbackslash hline} berikutnya diberikan dengan parameter opsional \texttt{[0.8ex]}, yang menambahkan spasi vertikal untuk keterbacaan.
 \end{packed_enum}
 
-Dengan penjelasan ini, kode menghasilkan tabel terstruktur yang diberi nomor secara otomatis dan dapat dirujuk di teks dokumen. Hasil tabel dari \cref{lst:kode_tabel} adalah terlihat pada \cref{tab:hresult}.
+Dengan penjelasan ini, kode menghasilkan tabel terstruktur yang diberi nomor secara otomatis dan dapat dirujuk di teks dokumen. Hasil tabel dari \cref{lst:kode-tabel} adalah terlihat pada \cref{tab:hresult}.
 
 \begin{table}[h]
     \caption{Performance Using Hard Decision Detection}
@@ -460,7 +458,7 @@ Dengan penjelasan ini, kode menghasilkan tabel terstruktur yang diberi nomor sec
 
 Kita juga bisa menambahkan tabel yang besar dengan format halaman landscape seperti contoh berikut dan mention tabel seperti berikut ini \cref{tab:LPer} dan berikut ini \cref{tab:PPer}.
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen dengan Sideway, label=lst:kode_tabel_sideway]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen dengan Sideway, label=lst:kode-tabel-sideway]
     \begin{sidewaystable}[htbp]
         \caption{Performance After Post Filtering}
         \label{tab:LPer}
@@ -532,9 +530,9 @@ Kode ini akan menghasilkan tabel landscape dengan satu caption, beberapa kolom g
     \end{tabular}
 \end{sidewaystable}
 
-Contoh lain \cref{lst:kode_tabel_lain} untuk pembuatan tabel seperti di bawah ini dan hasilnya tertampil pada \cref{tab:PPer}.
+Contoh lain \cref{lst:kode-tabel-lain} untuk pembuatan tabel seperti di bawah ini dan hasilnya tertampil pada \cref{tab:PPer}.
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen, label=lst:kode_tabel_lain]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Membuat Tabel dalam Dokumen, label=lst:kode-tabel-lain]
     \begin{table}[ht]
         \caption{Performance After Post Filtering}
         \label{tab:PPer}
@@ -582,18 +580,18 @@ Contoh lain \cref{lst:kode_tabel_lain} untuk pembuatan tabel seperti di bawah in
 
 \section{Menambahkan Persamaan}
 
-Persamaan tidak lepas dari bidang ilmu teknik dan kadang perlu dituliskan dalam sebuah laporan. Sangat mudah menuliskan persamaan pada sebuah dokumen \LaTeX. Terdapat 2 jenis penulisan persamaan, yaitu inline dengan text seperti contoh ini \(x^2 + y^2 = z^2\) atau seperti ini $E=mc^2$. Jenis lain adalah dituliskan seperti di bawah ini, yang otomatis akan mendapatkan penomoran. Apabila belum familiar dengan kode untuk penulisan persamaan pada \LaTeX, Anda bisa menggunakan tool berikut \url{https://latex.codecogs.com/eqneditor/editor.php} atau \url{https://latexeditor.lagrida.com/}. Setiap persamaan harus disebutkan dalam teks seperti \cref{eq:satu} dan \cref{eq:equationDua} dan dijelaskan terkait persamaan tersebut untuk apa.
+Persamaan tidak lepas dari bidang ilmu teknik dan kadang perlu dituliskan dalam sebuah laporan. Sangat mudah menuliskan persamaan pada sebuah dokumen \LaTeX. Terdapat 2 jenis penulisan persamaan, yaitu inline dengan text seperti contoh ini \(x^2 + y^2 = z^2\) atau seperti ini $E=mc^2$. Jenis lain adalah dituliskan seperti di bawah ini, yang otomatis akan mendapatkan penomoran. Apabila belum familiar dengan kode untuk penulisan persamaan pada \LaTeX, Anda bisa menggunakan tool berikut \url{https://latex.codecogs.com/eqneditor/editor.php} atau \url{https://latexeditor.lagrida.com/}. Setiap persamaan harus disebutkan dalam teks seperti \cref{eq:satu} dan \cref{eq:equation-dua} dan dijelaskan terkait persamaan tersebut untuk apa.
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menulis Persamaan, label=lst:kode_persamaan_emc]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menulis Persamaan, label=lst:kode-persamaan-emc]
     \begin{equation}
         \label{eq:satu}
         E=mc^2
     \end{equation}
 \end{lstlisting}
 
-\begin{lstlisting}[language=TeX, caption=Kode untuk Menulis Persamaan, label=lst:kode_persamaan_mn]
+\begin{lstlisting}[language=TeX, caption=Kode untuk Menulis Persamaan, label=lst:kode-persamaan-mn]
     \begin{equation}
-        \label{eq:equationDua}
+        \label{eq:equation-dua}
         m_n = k_p*e_n + \frac{k_e*T}{T_{reset}}\sum_{i=0}^{n}e_i + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R}
     \end{equation}
 \end{lstlisting}
@@ -608,7 +606,7 @@ Dengan menggunakan lingkungan \texttt{equation}, Anda bisa menulis dan memberi n
 \end{equation}
 
 \begin{equation}
-    \label{eq:equationDua}
+    \label{eq:equation-dua}
     m_n = k_p*e_n + \frac{k_e*T}{T_{reset}}\sum_{i=0}^{n}e_i + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R}
 \end{equation}
 
