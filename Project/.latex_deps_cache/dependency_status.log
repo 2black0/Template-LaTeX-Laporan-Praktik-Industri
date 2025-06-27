@@ -1,0 +1,8 @@
+# LaTeX Dependencies Cache
+# Generated: Fri Jun 27 09:59:25 WIB 2025
+# Cache validity: 168 hours
+
+dependency_status: OK
+missing_packages: none
+optional_missing: l3backend l3kernel l3packages
+last_check: 1750993165
